@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f6f8" />
+    <title>Campus OD | Event & On-Duty</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loginScreen"></div>
+    <div class="app-shell" id="appShell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark">C</div>
+          <div><strong>Campus OD</strong><small>Event & On-Duty</small></div>
+          <button
+            class="icon-btn close-nav"
+            id="closeNav"
+            aria-label="Close menu"
+          >
+            ×
+          </button>
+        </div>
+        <div class="role-box">
+          <label>CURRENT ROLE</label>
+          <div class="role-display" id="roleLabel">Student</div>
+          <div class="userline">
+            <div class="avatar" id="avatar">S</div>
+            <div>
+              <strong id="userName">Ananya Sharma</strong
+              ><small id="userMeta">CSE · 3rd Year</small>
+            </div>
+          </div>
+        </div>
+        <nav id="nav"></nav>
+        <div class="side-foot">
+          <div class="live-dot"></div>
+          Workflow system <span>v1.0</span>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
+          </button>
+          <div class="crumb">
+            Campus OD <span>/</span> <b id="pageCrumb">Dashboard</b>
+          </div>
+          <div class="top-actions">
+            <span class="today" id="today"></span
+            ><button class="btn secondary small" id="logoutBtn">
+              Sign out
+            </button>
+            <div class="avatar small-avatar" id="topAvatar">S</div>
+          </div>
+        </header>
+        <section class="content" id="content"></section>
+      </main>
+    </div>
+    <div id="modalRoot"></div>
+    <div id="toast" class="toast"></div>
+    <script src="js/api.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/pages.js"></script>
+    <script src="js/actions.js"></script>
+  </body>
+</html>
